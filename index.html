@@ -5,11 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Watch</title>
-  <style>
-    body {
-      color: #f00;
-    }
-  </style>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,19 +17,11 @@
   </div>
 
   <noscript>JS is disabled</noscript>
-  <script>alert('JS is running inside 111!'); alert('JS is running inside 123!');</script>
   <script>
-    alert('JS is running inside!');
-    var count = 0;
-    function log(message) {
-      // if (count++ < 10) alert(message + ' ');
-    }
-    log('JS');
     var wrapper = document.querySelector('.wrapper');
     var watch = document.querySelector('.watch'); var hoursEl = document.querySelector('.hours'); var colonEl = document.querySelector('.colon'); var minutesEl = document.querySelector('.minutes');
-    log('wrapper & watch: ' + !!wrapper && !!watch);
+
     function onResize() {
-      log('resize');
       var screenWidth = window.innerWidth;
       var screenHeight = window.innerHeight;
       var width;
@@ -44,7 +31,6 @@
       else {
         width = screenWidth;
       }
-      // width*=0.9
       var fontSize = width * 10 / 27.5;
       watch.style.fontSize = fontSize + 'px';
     }
@@ -52,7 +38,6 @@
     window.addEventListener('resize', onResize);
 
     function tik() {
-      log('tik');
       var date = new Date();
       var hours = ('0' + date.getHours()).slice(-2);
       var minutes = ('0' + date.getMinutes()).slice(-2);
@@ -67,7 +52,6 @@
     //   window.location.href = "#";
     // }, 10000);
   </script>
-  <script>alert('JS is running inside 222!');</script>
 
 </body>
 
