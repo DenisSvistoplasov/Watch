@@ -1,0 +1,28 @@
+.wrapper{
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+.watch{
+  font-size: 100%;
+  color: #ddf;
+  font-family: sans-serif;
+}
+.colon{
+  animation: colon 2s step-start infinite;
+}
+
+@keyframes colon{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
