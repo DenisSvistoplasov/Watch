@@ -1,7 +1,12 @@
+function log(message) {
+  document.body.append(message+' ')
+}
+log('JS')
 const wrapper = document.querySelector('.wrapper');
 const watch = document.querySelector('.watch');const hoursEl = document.querySelector('.hours');const colonEl = document.querySelector('.colon');const minutesEl = document.querySelector('.minutes');
-
-function onResize(){
+log('wrapper & watch: '+!!wrapper&&!!watch)
+function onResize() {
+  log('resize')
   const screenWidth = window.innerWidth
   const screenHeight = window.innerHeight
   let width 
@@ -18,7 +23,8 @@ function onResize(){
 onResize()
 window.addEventListener('resize', onResize)
 
-function tik(){
+function tik() {
+  log('tik')
   const date = new Date()
   const hours = ('0'+date.getHours()).slice(-2)
   const minutes = ('0'+date.getMinutes()).slice(-2)
