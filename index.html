@@ -22,7 +22,7 @@
   </div>
 
   <noscript>JS is disabled</noscript>
-  <script>alert('JS is running inside 111!');</script>
+  <script>alert('JS is running inside 111!');alert('JS is running inside 123!');</script>
   <script>
     alert('JS is running inside!');
     function log(message) {
@@ -61,10 +61,10 @@
     setInterval(tik, 334);
 
     // prevent sleep
-    setInterval(() => {
-      window.location.href = "#stayAwake";
-      window.location.href = "#";
-    }, 10000);
+    // setInterval(() => {
+    //   window.location.href = "#stayAwake";
+    //   window.location.href = "#";
+    // }, 10000);
   </script>
   <script>alert('JS is running inside 222!');</script>
 
