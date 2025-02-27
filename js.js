@@ -1,3 +1,4 @@
+alert('JS is running inside!');
 function log(message) {
   document.body.append(message+' ')
 }
