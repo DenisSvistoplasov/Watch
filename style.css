@@ -8,7 +8,8 @@
 }
 .watch{
   font-size: 100%;
-  color: #ddf;
+  /* color: #ddf; */
+  color: #f00;
   font-family: sans-serif;
 }
 .colon{
