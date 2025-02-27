@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   background-color: #000;
+  opacity: 0;
 }
 .watch{
   font-size: 100%;
