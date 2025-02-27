@@ -22,11 +22,12 @@
   </div>
 
   <noscript>JS is disabled</noscript>
-  <script>alert('JS is running inside 111!');alert('JS is running inside 123!');</script>
+  <script>alert('JS is running inside 111!'); alert('JS is running inside 123!');</script>
   <script>
     alert('JS is running inside!');
+    var count = 0;
     function log(message) {
-      document.body.append(message + ' ');
+      if (count++ < 10) alert(message + ' ');
     }
     log('JS');
     var wrapper = document.querySelector('.wrapper');
